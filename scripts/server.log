@@ -1,0 +1,63 @@
+LOG:  database system was shut down at 2012-01-05 18:11:50 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 8018) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-06 13:22:44 CET
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 8296) running in data directory "/Users/bartbaas/data/pgdata"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 8296) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-06 14:22:32 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-06 14:24:25 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 8819) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-06 14:47:37 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 9450) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-06 14:54:13 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 9886) running in data directory "/Users/bartbaas/data/pgdata"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 9886) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
