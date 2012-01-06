@@ -73,7 +73,7 @@ case $choice in
 6) time scripts/create_topology.sh; ./backtodashboard.sh;;
 7) echo "not implemented yet"; ./backtodashboard.sh;;
 8) time scripts/stop_postgis.sh; ./backtodashboard.sh;;
-9) time scripts/stop_postgis.sh; ./backtodashboard.sh;;
+9) time scripts/test_route.sh; ./backtodashboard.sh;;
 10) echo "not implemented yet"; ./backtodashboard.sh;;
 11) echo "not implemented yet"; ./backtodashboard.sh;;
 12) echo "not implemented yet"; ./backtodashboard.sh;;

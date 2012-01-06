@@ -19,4 +19,4 @@ psql -d $DBNAME -f /usr/local/share/postlbs/routing_core.sql
 psql -d $DBNAME -f /usr/local/share/postlbs/routing_core_wrappers.sql
 psql -d $DBNAME -f /usr/local/share/postlbs/routing_topology.sql
 
-osm2pgsql --slim --database $DBNAME --style /usr/local/share/osm2pgsql/default.style $IMPORTOSM
+osm2pgsql --slim --database $DBNAME --style /usr/local/share/osm2pgsql/default.style --proj EPSG:4326 $IMPORTOSM
