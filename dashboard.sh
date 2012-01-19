@@ -65,7 +65,7 @@ tput sgr0
 
 #call the required shell or set QUIT and continue the loop, or continue the loop on any other input
 case $choice in
-1) time scripts/postgis_start.sh; ./backtodashboard.sh;;
+1) exec scripts/timer.sh scripts/postgis_start.sh;;
 2) echo "not implemented yet"; ./backtodashboard.sh;;
 3) time scripts/postgis_stop.sh; ./backtodashboard.sh;;
 4) time scripts/postgis_clean.sh; ./backtodashboard.sh;;
@@ -73,7 +73,7 @@ case $choice in
 6) time scripts/create_topology.sh; ./backtodashboard.sh;;
 7) echo "not implemented yet"; ./backtodashboard.sh;;
 8) time scripts/stop_postgis.sh; ./backtodashboard.sh;;
-9) time scripts/test_route.sh; ./backtodashboard.sh;;
+9) exec scripts/timer.sh scripts/test_route.sh;;
 10) echo "not implemented yet"; ./backtodashboard.sh;;
 11) echo "not implemented yet"; ./backtodashboard.sh;;
 12) echo "not implemented yet"; ./backtodashboard.sh;;
