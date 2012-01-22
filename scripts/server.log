@@ -1,100 +1,22 @@
-LOG:  database system was shut down at 2012-01-05 18:11:50 CET
-LOG:  database system is ready to accept connections
+LOG:  database system was shut down at 2012-01-19 12:18:09 CET
 LOG:  autovacuum launcher started
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 8018) running in data directory "/Users/bartbaas/data/pgdata"?
+LOG:  database system is ready to accept connections
+ERROR:  subquery in FROM must have an alias at character 24
+HINT:  For example, FROM (SELECT ...) [AS] foo.
+STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326)));
+ERROR:  syntax error at or near "as" at character 136
+STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326))as foo);
+ERROR:  syntax error at or near "as" at character 137
+STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326)) as foo);
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-20 14:42:48 CET
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
 LOG:  received fast shutdown request
 LOG:  aborting any active transactions
 LOG:  autovacuum launcher shutting down
 LOG:  shutting down
 LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 13:22:44 CET
-LOG:  autovacuum launcher started
-LOG:  database system is ready to accept connections
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 8296) running in data directory "/Users/bartbaas/data/pgdata"?
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 8296) running in data directory "/Users/bartbaas/data/pgdata"?
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 14:22:32 CET
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 14:24:25 CET
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 8819) running in data directory "/Users/bartbaas/data/pgdata"?
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 14:47:37 CET
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 9450) running in data directory "/Users/bartbaas/data/pgdata"?
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 14:54:13 CET
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 9886) running in data directory "/Users/bartbaas/data/pgdata"?
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 9886) running in data directory "/Users/bartbaas/data/pgdata"?
-LOG:  checkpoints are occurring too frequently (19 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-LOG:  checkpoints are occurring too frequently (12 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-LOG:  checkpoints are occurring too frequently (5 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 15:25:39 CET
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
-LOG:  received fast shutdown request
-LOG:  aborting any active transactions
-LOG:  autovacuum launcher shutting down
-LOG:  shutting down
-LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-06 15:35:18 CET
-LOG:  autovacuum launcher started
-LOG:  database system is ready to accept connections
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 10991) running in data directory "/Users/bartbaas/data/pgdata"?
-ERROR:  relation "planet_osm_lines" does not exist at character 15
-STATEMENT:  select * from planet_osm_lines where ST_Within(the_geom, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326) ) 
-	;
-ERROR:  column "the_geom" does not exist at character 47
-STATEMENT:  select * from planet_osm_line where ST_Within(the_geom, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326) ) 
-	;
-ERROR:  column a.the_geom does not exist at character 52
-STATEMENT:  select * from planet_osm_line as a where ST_Within(a.the_geom, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326) ) 
-	;
-ERROR:  column "geom" does not exist at character 15
-STATEMENT:  select extent(geom) from planet_osm_line;
-LOG:  checkpoints are occurring too frequently (17 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-LOG:  checkpoints are occurring too frequently (12 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-LOG:  checkpoints are occurring too frequently (6 seconds apart)
-HINT:  Consider increasing the configuration parameter "checkpoint_segments".
-ERROR:  Start vertex was not found.
-STATEMENT:  SELECT SUM(cost) FROM shortest_path('SELECT gid as id, source, target, length as cost FROM network', 5, 40318,false,false);

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+python -c'import time; print repr(time.time())'
 # clear the screen
 tput clear
 
@@ -43,13 +43,13 @@ tput cup 6 45
 echo "7.  Empty SQL call"
 
 tput cup 7 45
-echo "8.  Test1"
+echo "8.  Test1 - bounding box"
 
 tput cup 8 45
-echo "9.  Test2 - route"
+echo "9.  Test2"
 
 tput cup 9 45
-echo "10. Test3"
+echo "10. Test3 - route"
 
 tput cup 10 45
 echo "11. Test4"
@@ -67,14 +67,14 @@ tput sgr0
 case $choice in
 1) exec scripts/timer.sh scripts/postgis_start.sh;;
 2) echo "not implemented yet"; ./backtodashboard.sh;;
-3) time scripts/postgis_stop.sh; ./backtodashboard.sh;;
-4) time scripts/postgis_clean.sh; ./backtodashboard.sh;;
-5) time scripts/import_osm2pgsql.sh; ./backtodashboard.sh;;
-6) time scripts/create_topology.sh; ./backtodashboard.sh;;
-7) echo "not implemented yet"; ./backtodashboard.sh;;
-8) time scripts/stop_postgis.sh; ./backtodashboard.sh;;
-9) exec scripts/timer.sh scripts/test_route.sh;;
-10) echo "not implemented yet"; ./backtodashboard.sh;;
+3) exec scripts/timer.sh scripts/postgis_stop.sh;;
+4) exec scripts/timer.sh scripts/postgis_drop_amsterdam.sh;;
+5) exec scripts/timer.sh scripts/import_osmamsterdam.sh;;
+6) exec scripts/timer.sh scripts/create_topology.sh;;
+7) exec scripts/timer.sh scripts/test_empty_amsterdam.sh;;
+8) exec scripts/timer.sh scripts/test_bbox_amsterdam.sh;;
+9) echo "not implemented yet"; ./backtodashboard.sh;;
+10) exec scripts/timer.sh scripts/test_route_amsterdam.sh;;
 11) echo "not implemented yet"; ./backtodashboard.sh;;
 12) echo "not implemented yet"; ./backtodashboard.sh;;
 esac

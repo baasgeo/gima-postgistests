@@ -1,10 +1,9 @@
 #!/bin/bash
-#START=$(date +%s%N)
+STARTTIME=$(python -c'import time; print repr(time.time())')
 # do something
 # start your script work here
-time ./$1
+./$1
 # your logic ends here
-#END=$(date +%s%N)
-#DIFF=$(( $END - $START ))
-#echo "It took $DIFF seconds"
+ENDTIME=$(python -c'import time; print repr(time.time())')
+ECHO "Elapsed time: " $(bc -l <<< $ENDTIME-$STARTTIME)
 ./backtodashboard.sh

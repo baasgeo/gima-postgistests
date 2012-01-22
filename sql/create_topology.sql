@@ -29,4 +29,4 @@ delete from network where length is null;
 insert into geometry_columns(f_table_catalog, f_table_schema, f_table_name, f_geometry_column, coord_dimension, srid, "type")
     select '', 'public', 'network', 'the_geom', ST_CoordDim(the_geom), ST_SRID(the_geom), GeometryType(the_geom)
 	from network limit 1;
-select assign_vertex_id('network', 0.0001, 'the_geom', 'gid');
+select assign_vertex_id('network', 0.000001, 'the_geom', 'gid');
