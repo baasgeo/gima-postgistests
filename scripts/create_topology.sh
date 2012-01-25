@@ -1,4 +1,4 @@
 #!/bin/sh
-DBNAME=amsterdam
+DBNAME=$1
 
 psql -d $DBNAME -f sql/create_topology.sql

@@ -1,0 +1,2 @@
+Select source_id, ST_Distance(ST_ClosestPoint(pt,line), ST_ClosestPoint(line,pt)) as dist
+FROM (SELECT ST_GeomFromEWKT(:point)::geometry As pt, the_geom As line, source As source_id from network) as Points order by dist limit 1;

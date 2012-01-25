@@ -1,20 +1,960 @@
-LOG:  database system was shut down at 2012-01-19 12:18:09 CET
+LOG:  database system was shut down at 2012-01-20 15:40:14 CET
 LOG:  autovacuum launcher started
 LOG:  database system is ready to accept connections
-ERROR:  subquery in FROM must have an alias at character 24
-HINT:  For example, FROM (SELECT ...) [AS] foo.
-STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326)));
-ERROR:  syntax error at or near "as" at character 136
-STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326))as foo);
-ERROR:  syntax error at or near "as" at character 137
-STATEMENT:  select count(way) from (select * from planet_osm_line where ST_Within(way, ST_MakeEnvelope(4.88557, 52.36694, 4.91214, 52.37674, 4326)) as foo);
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
 LOG:  autovacuum launcher shutting down
-LOG:  received smart shutdown request
 LOG:  shutting down
 LOG:  database system is shut down
-LOG:  database system was shut down at 2012-01-20 14:42:48 CET
+LOG:  database system was shut down at 2012-01-23 23:45:44 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-24 21:33:19 CET
 LOG:  autovacuum launcher started
 LOG:  database system is ready to accept connections
+ERROR:  database "bartbaas" already exists
+STATEMENT:  CREATE DATABASE bartbaas;
+	
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+FATAL:  --style requires a value
+postgres: option requires an argument -- f
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+postgres: option requires an argument -- c
+FATAL:  invalid command-line arguments for server process
+HINT:  Try "postgres --help" for more information.
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 3290) running in data directory "/Users/bartbaas/data/pgdata"?
+ERROR:  database "medemblik" does not exist
+STATEMENT:  DROP DATABASE medemblik;
+	
+ERROR:  database "amsterdam" does not exist
+STATEMENT:  DROP DATABASE amsterdam;
+	
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (4 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (4 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (4 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+ERROR:  database "netherlands" does not exist
+STATEMENT:  DROP DATABASE netherlands;
+	
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (13 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (14 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (14 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (13 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (14 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (13 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (13 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (26 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (23 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (28 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (24 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (27 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (29 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (25 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+ERROR:  canceling autovacuum task
+CONTEXT:  automatic vacuum of table "netherlands.public.planet_osm_roads"
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (20 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (21 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (14 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (14 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+ERROR:  canceling autovacuum task
+CONTEXT:  automatic vacuum of table "netherlands.public.planet_osm_ways"
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (18 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (19 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (16 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (22 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (17 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (15 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+ERROR:  canceling autovacuum task
+CONTEXT:  automatic vacuum of table "netherlands.public.planet_osm_polygon"
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (4 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (3 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (4 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (10 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (9 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (8 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (5 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (6 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (11 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+LOG:  checkpoints are occurring too frequently (12 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
 LOG:  received fast shutdown request
 LOG:  aborting any active transactions
 LOG:  autovacuum launcher shutting down

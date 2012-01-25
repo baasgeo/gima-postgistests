@@ -1,7 +1,7 @@
 #!/bin/sh
 #One-off task to create an empty database
-DBNAME=medemblik
-IMPORTOSM=/Volumes/Data/Users/bartbaas/data/osm/medemblik.osm
+DBNAME=$1
+IMPORTOSM=/Volumes/Data/Users/bartbaas/data/osm/$1.osm
 
 # if exists, remove the previous database
 dropdb $DBNAME
