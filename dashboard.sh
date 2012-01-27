@@ -39,21 +39,22 @@ tput clear
 tput cup 1 5
 
 # Set a foreground colour using ANSI escape
-tput setaf 3
+tput rev
 echo "PostGIS DashBoard -" $DATASET | tr a-z A-Z
 tput sgr0
 
 # Set reverse video mode
-tput rev
+tput setaf 7
+tput setab 6
 tput cup 3 5
 echo "A) Medemblik"
 tput cup 3 25
 echo "B) Amsterdam"
 tput cup 3 45
-echo "C) Netherlands"
+echo "C) North-Holland"
 tput sgr0
 
-# Set reverse video mode
+# Set a foreground colour using ANSI escape
 tput setaf 1
 tput cup 5 5
 echo "Instance"
@@ -67,13 +68,13 @@ tput cup 6 5
 echo "1. Start database"
 
 tput cup 7 5
-echo "2. Statistics"
+echo "2. Database statistics"
 
 tput cup 8 5
 echo "3. Stop database"
 
 tput cup 9 5
-echo "4. Delete databases"
+echo "4. Delete database"
 
 tput cup 12 5
 echo "5. Import osm data"
@@ -88,7 +89,7 @@ tput cup 7 45
 echo "8.  Test1 - bounding box"
 
 tput cup 8 45
-echo "9.  Test2"
+echo "9.  Test2 - closest point"
 
 tput cup 9 45
 echo "10. Test3 - route"
@@ -99,9 +100,11 @@ echo "11. Test4"
 tput cup 11 45
 echo "12. Test5"
 
+tput cup 15 5
+echo "Enter 'cmd' for the psql commandline"
 # Set bold mode
 tput bold
-tput cup 16 5
+tput cup 17 5
 read -p "Enter your choice [A-C] or [1-12] or q to exit: " choice
 tput sgr0
 
@@ -109,17 +112,20 @@ tput sgr0
 case $choice in
 A) reload "medemblik";;
 B) reload "amsterdam";;
-C) reload "netherlands";;
+C) reload "north-holland";;
 1) timer scripts/postgis_start.sh;;
-2) echo "not implemented yet";;
+2) timer scripts/statistics.sh;;
 3) timer scripts/postgis_stop.sh;;
 4) timer scripts/postgis_drop.sh $DATASET;;
 5) timer scripts/import_osm.sh $DATASET;;
 6) timer scripts/create_topology.sh $DATASET;;
 7) timer scripts/test_empty.sh $DATASET;;
 8) timer scripts/test_bbox_$DATASET.sh;;
-9) echo "not implemented yet";;
+9) timer scripts/test_closepoint_$DATASET.sh;;
 10) timer scripts/test_route_$DATASET.sh;;
 11) echo "not implemented yet";;
 12) echo "not implemented yet";;
+cmd) psql -d $DATASET;;
+q) exit;;
+*) reload;;
 esac

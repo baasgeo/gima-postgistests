@@ -8,7 +8,7 @@ wayRecord record;
 pointCount integer;
 pointIndex integer;
 geomFragment record;
-BEGIN
+BEGIN -- start the transaction
 -- for each street
 FOR streetRecord in select way, osm_id, name from planet_osm_line where highway is not null and highway not in ('cycleway','footway','pedestrain','service') LOOP
  SELECT * from planet_osm_ways where id = streetRecord.osm_id into wayRecord; 

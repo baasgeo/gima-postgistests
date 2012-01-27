@@ -20,5 +20,5 @@ psql -d $DBNAME -f /usr/local/share/postlbs/routing_core_wrappers.sql
 psql -d $DBNAME -f /usr/local/share/postlbs/routing_topology.sql
 
 osm2pgsql --slim --database $DBNAME --style /usr/local/share/osm2pgsql/default.style --latlong --multi-geometry --number-processes 2 $IMPORTOSM #--proj EPSG:4326
-psql -d $DBNAME -f sql/create_geography.sql
-psql -d $DBNAME -c "VACUUM FREEZE"
+#psql -d $DBNAME -f sql/create_geography.sql
+psql -d $DBNAME -c "VACUUM"
