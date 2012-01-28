@@ -1,5 +1,5 @@
 #!/bin/sh
-DBNAME=amsterdam
+DBNAME=north-holland
 START=$(python -c'import time; print repr(time.time())')
 
 #psql -d $DBNAME -f sql/test_route2.sql
