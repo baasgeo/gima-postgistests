@@ -1,8 +1,10 @@
-drop table if exists network cascade;
-drop table if exists vertices_tmp cascade;
-create table network(gid serial, osm_id integer, name varchar, the_geom geometry, source integer, target integer, length float);
+-- create network topology from OSM data
+-- clean up existing tables
+DROP TABLE IF EXISTS network CASCADE;
+DROP TABLE IF EXISTS vertices_tmp CASCADE;
+CREATE TABLE network(gid serial, osm_id INTEGER, name VARCHAR, the_geom GEOMETRY, source INTEGER, target INTEGER, length FLOAT);
 
-CREATE OR REPLACE FUNCTION compute_network() RETURNS text as $$
+CREATE OR REPLACE FUNCTION create_network() RETURNS text AS $$
 DECLARE
 streetRecord record;
 wayRecord record;
@@ -11,23 +13,23 @@ pointIndex integer;
 geomFragment record;
 BEGIN -- start the transaction
 -- for each street
-FOR streetRecord in select way, osm_id, name from planet_osm_line where highway is not null and highway not in ('cycleway','footway','pedestrain','service') LOOP
- SELECT * from planet_osm_ways where id = streetRecord.osm_id into wayRecord; 
- FOR pointIndex in array_lower(wayRecord.nodes, 1)..array_upper(wayRecord.nodes,1)-1 LOOP
+FOR streetRecord IN SELECT way, osm_id, name FROM planet_osm_line WHERE highway IS NOT NULL AND highway NOT IN ('cycleway','footway','pedestrain','service') LOOP
+ SELECT * FROM planet_osm_ways WHERE id = streetRecord.osm_id INTO wayRecord; 
+ FOR pointIndex IN array_lower(wayRecord.nodes, 1)..array_upper(wayRecord.nodes,1)-1 LOOP
   --RAISE NOTICE 'Inserting name % source %, target %', streetRecord.name, wayRecord.nodes[pointIndex], wayRecord.nodes[pointIndex+1];
-  select st_makeline(st_pointn(streetRecord.way, pointIndex), st_pointn(streetRecord.way, pointIndex+1)) as way into geomFragment;
-  insert into network(osm_id, name, the_geom, source, target, length) values(streetRecord.osm_id, streetRecord.name, geomFragment.way, wayRecord.nodes[pointIndex], wayRecord.nodes[pointIndex+1], st_length(ST_GeogFromWKB(geomFragment.way)));
+  SELECT st_makeline(st_pointn(streetRecord.way, pointIndex), st_pointn(streetRecord.way, pointIndex+1)) AS way INTO geomFragment;
+  INSERT INTO network(osm_id, name, the_geom, source, target, length) VALUES(streetRecord.osm_id, streetRecord.name, geomFragment.way, wayRecord.nodes[pointIndex], wayRecord.nodes[pointIndex+1], st_length(ST_GeogFromWKB(geomFragment.way)));
  END LOOP;
 END LOOP;
 return 'Done';
 END;
 $$ LANGUAGE 'plpgsql';
 
-select * from compute_network();
+SELECT * FROM create_network();
 -- clean up null values
-delete from network where length is null;
+DELETE FROM network WHERE LENGTH IS NULL;
 -- fill in topology table's geometry column
-insert into geometry_columns(f_table_catalog, f_table_schema, f_table_name, f_geometry_column, coord_dimension, srid, "type")
-    select '', 'public', 'network', 'the_geom', ST_CoordDim(the_geom), ST_SRID(the_geom), GeometryType(the_geom)
-	from network limit 1;
-select assign_vertex_id('network', 0.00002, 'the_geom', 'gid');
+INSERT INTO geometry_columns(f_table_catalog, f_table_schema, f_table_name, f_geometry_column, coord_dimension, srid, "type")
+    SELECT '', 'public', 'network', 'the_geom', ST_CoordDim(the_geom), ST_SRID(the_geom), GeometryType(the_geom)
+	FROM network LIMIT 1;
+SELECT assign_vertex_id('network', 0.00002, 'the_geom', 'gid');
