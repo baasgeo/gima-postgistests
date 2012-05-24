@@ -13,5 +13,5 @@ sudo sysctl -w kern.sysv.shmall=8192
 #Starting postgres
 echo "Starting postgresql"
 #pg_ctl -D /usr/local/var/postgres -l $DIR/server.log -D $DATA start
-pg_ctl -D $DATA -l $DIR/server.log start
+sudo -u bartbaas pg_ctl -D $DATA -l $DIR/server.log start
 

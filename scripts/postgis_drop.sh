@@ -4,5 +4,5 @@ DBNAME=$1
 
 # if exists, remove the previous database
 dropdb $DBNAME
-vacuumdb --all 
-reindexdb --all
+#vacuumdb --all 
+#reindexdb --all
