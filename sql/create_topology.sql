@@ -12,20 +12,27 @@ pointCount integer;
 pointIndex integer;
 geomFragment record;
 BEGIN -- start the transaction
--- for each street
-FOR streetRecord IN SELECT way, osm_id, name FROM planet_osm_line WHERE highway IS NOT NULL AND highway NOT IN ('cycleway','footway','pedestrain','service') LOOP
+FOR streetRecord IN SELECT way, osm_id, name FROM planet_osm_line 
+    WHERE highway IS NOT NULL AND highway NOT IN ('cycleway','footway','pedestrain','service') LOOP
  SELECT * FROM planet_osm_ways WHERE id = streetRecord.osm_id INTO wayRecord; 
  FOR pointIndex IN array_lower(wayRecord.nodes, 1)..array_upper(wayRecord.nodes,1)-1 LOOP
-  --RAISE NOTICE 'Inserting name % source %, target %', streetRecord.name, wayRecord.nodes[pointIndex], wayRecord.nodes[pointIndex+1];
-  SELECT st_makeline(st_pointn(streetRecord.way, pointIndex), st_pointn(streetRecord.way, pointIndex+1)) AS way INTO geomFragment;
-  INSERT INTO network(osm_id, name, the_geom, source, target, length) VALUES(streetRecord.osm_id, streetRecord.name, geomFragment.way, wayRecord.nodes[pointIndex], wayRecord.nodes[pointIndex+1], st_length(ST_GeogFromWKB(geomFragment.way)));
+  SELECT st_makeline(st_pointn(streetRecord.way, pointIndex), st_pointn(streetRecord.way, pointIndex+1)) AS way 
+    INTO geomFragment;
+  INSERT INTO network(osm_id, name, the_geom, source, target, length) 
+    VALUES(streetRecord.osm_id, 
+        streetRecord.name, 
+        geomFragment.way, 
+        wayRecord.nodes[pointIndex], 
+        wayRecord.nodes[pointIndex+1], 
+        st_length(ST_GeogFromWKB(geomFragment.way), 
+        false));
  END LOOP;
 END LOOP;
 return 'Done';
 END;
 $$ LANGUAGE 'plpgsql';
 
-SELECT * FROM create_network();
+SELECT create_network();
 -- clean up null values
 DELETE FROM network WHERE LENGTH IS NULL;
 -- fill in topology table's geometry column
