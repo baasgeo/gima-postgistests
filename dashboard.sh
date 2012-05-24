@@ -101,10 +101,10 @@ tput cup 10 45
 echo "10. Test3 - route"
 
 tput cup 11 45
-echo "11. Test4 - spatial join"
+echo "11. Test4 - bounding box gml"
 
 tput cup 12 45
-echo "12. Test5 - graph traversal"
+echo "12. <..>"
 
 tput cup 16 5
 echo "Note: enter 'cmd' for the psql commandline"
@@ -129,7 +129,7 @@ C) reload "north-holland";;
 8) timer scripts/test_bbox_$DATASET.sh;;
 9) timer scripts/test_closepoint_$DATASET.sh;;
 10) timer scripts/test_route_$DATASET.sh;;
-11) echo "not implemented yet";;
+11) timer scripts/test_gml_$DATASET.sh;;
 12) echo "not implemented yet";;
 cmd) psql -d $DATASET;;
 q) exit;;
