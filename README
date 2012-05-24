@@ -1,0 +1,19 @@
+Spatial tests on PostGIS
+==============================
+
+[IMPORTANT]
+Tested with: PostgreSQL version 9.1.3, PostGIS version 1.5.3, pgRouting version 1.05
+
+== Building ==
+
+----
+Not needed, these are bash scripts, should work on any UNIX systems
+----
+
+== Running ==
+
+* Make sure PostgreSQL is installed and running on localhost
+
+* Whenever needed, database path can be changed by editing postgis_start.sh
+
+* That's it!
