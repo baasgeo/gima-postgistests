@@ -1,8 +1,8 @@
 Spatial tests on PostGIS
 ==============================
 
-[IMPORTANT]
-Tested with: 
+== Tested with ==
+
 * PostgreSQL version 9.1.3, 
 * PostGIS version 1.5.3, 
 * pgRouting version 1.05
